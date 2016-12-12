@@ -30,6 +30,7 @@ public class Binomial extends javax.swing.JFrame {
         dlgInfoExito = new javax.swing.JDialog();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+        btnCloseInfoExito = new javax.swing.JButton();
         PanelCalculadora = new javax.swing.JPanel();
         btnMostrarEjemplos = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
@@ -39,71 +40,131 @@ public class Binomial extends javax.swing.JFrame {
         txtCalcNumReps = new javax.swing.JTextField();
         txtCalcExito = new javax.swing.JTextField();
         txtCalcProbExito = new javax.swing.JTextField();
-        txtCalcNumExitos = new javax.swing.JTextField();
+        txtCalcMinNumExitos = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        comboSimboloMinNumExitos = new javax.swing.JComboBox<>();
+        comboSimboloMaxNumExitos = new javax.swing.JComboBox<>();
+        txtCalcMaxNumExitos = new javax.swing.JTextField();
+        txtCalcMinNumExitos1 = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
+        PanelCapasEjemplos = new javax.swing.JLayeredPane();
         PanelEjemplo1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         txtEjemplo1NumReps = new javax.swing.JTextField();
         txtEjemplo1Exito = new javax.swing.JTextField();
         txtEjemplo1ProbExito = new javax.swing.JTextField();
-        txtEjemplo1NumExitos = new javax.swing.JTextField();
         txtEjemplo1Fracaso = new javax.swing.JTextField();
         txtEjemplo1NumFracasos = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
+        txtEjemplo1MinNumExitos = new javax.swing.JTextField();
+        comboEjemplo1SimboloMinNumExitos = new javax.swing.JComboBox<>();
+        jLabel15 = new javax.swing.JLabel();
+        comboEjemplo1SimboloMaxNumExitos = new javax.swing.JComboBox<>();
+        txtEjemplo1MaxNumExitos = new javax.swing.JTextField();
+        btnEjemplo1Siguiente = new javax.swing.JButton();
+        btnEjemplo1Anterior = new javax.swing.JButton();
+        PanelEjemplo2 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        txtEjemplo1NumReps1 = new javax.swing.JTextField();
+        txtEjemplo1Exito1 = new javax.swing.JTextField();
+        txtEjemplo1ProbExito1 = new javax.swing.JTextField();
+        txtEjemplo1Fracaso1 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        txtEjemplo1MinNumExitos1 = new javax.swing.JTextField();
+        comboEjemplo1SimboloMinNumExitos1 = new javax.swing.JComboBox<>();
+        jLabel21 = new javax.swing.JLabel();
+        comboEjemplo1SimboloMaxNumExitos1 = new javax.swing.JComboBox<>();
+        txtEjemplo1MaxNumExitos1 = new javax.swing.JTextField();
+        btnEjemplo2Siguiente = new javax.swing.JButton();
+        btnEjemplo2Anterior = new javax.swing.JButton();
+        PanelEjemplo3 = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        txtEjemplo1NumReps2 = new javax.swing.JTextField();
+        txtEjemplo1Exito2 = new javax.swing.JTextField();
+        txtEjemplo1ProbExito2 = new javax.swing.JTextField();
+        txtEjemplo1Fracaso2 = new javax.swing.JTextField();
+        jLabel26 = new javax.swing.JLabel();
+        txtEjemplo1MinNumExitos2 = new javax.swing.JTextField();
+        comboEjemplo1SimboloMinNumExitos2 = new javax.swing.JComboBox<>();
+        jLabel27 = new javax.swing.JLabel();
+        comboEjemplo1SimboloMaxNumExitos2 = new javax.swing.JComboBox<>();
+        txtEjemplo1MaxNumExitos2 = new javax.swing.JTextField();
+        btnEjemplo1Siguiente1 = new javax.swing.JButton();
+        btnEjemplo1Anterior1 = new javax.swing.JButton();
 
         dlgInfoExito.setTitle("Información Éxitos");
-        dlgInfoExito.setLocation(new java.awt.Point(400, 200));
-        dlgInfoExito.setMaximumSize(new java.awt.Dimension(285, 240));
-        dlgInfoExito.setMinimumSize(new java.awt.Dimension(285, 240));
+        dlgInfoExito.setLocation(new java.awt.Point(500, 200));
+        dlgInfoExito.setMinimumSize(new java.awt.Dimension(310, 260));
         dlgInfoExito.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
         dlgInfoExito.setModalityType(java.awt.Dialog.ModalityType.APPLICATION_MODAL);
-        dlgInfoExito.setPreferredSize(new java.awt.Dimension(285, 240));
+        dlgInfoExito.setSize(new java.awt.Dimension(310, 260));
 
         jLabel13.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel13.setText("<html>Breve descripción de lo que se<br> considerará como éxito. <br><br>Esto se utilizará solamente como <br>una referencia. Este campo es opcional.</html>");
+        jLabel13.setMaximumSize(new java.awt.Dimension(295, 200));
+        jLabel13.setMinimumSize(new java.awt.Dimension(295, 200));
+        jLabel13.setPreferredSize(new java.awt.Dimension(295, 200));
 
         jLabel14.setFont(new java.awt.Font("Trebuchet MS", 0, 24)); // NOI18N
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/lightbulb.png"))); // NOI18N
         jLabel14.setText("Éxito");
+
+        btnCloseInfoExito.setText("OK");
+        btnCloseInfoExito.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCloseInfoExitoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout dlgInfoExitoLayout = new javax.swing.GroupLayout(dlgInfoExito.getContentPane());
         dlgInfoExito.getContentPane().setLayout(dlgInfoExitoLayout);
         dlgInfoExitoLayout.setHorizontalGroup(
             dlgInfoExitoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dlgInfoExitoLayout.createSequentialGroup()
-                .addGap(86, 86, 86)
-                .addComponent(jLabel14)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dlgInfoExitoLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGroup(dlgInfoExitoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(dlgInfoExitoLayout.createSequentialGroup()
+                        .addGap(113, 113, 113)
+                        .addComponent(jLabel14))
+                    .addGroup(dlgInfoExitoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(dlgInfoExitoLayout.createSequentialGroup()
+                        .addGap(123, 123, 123)
+                        .addComponent(btnCloseInfoExito)))
+                .addGap(3, 3, 3))
         );
         dlgInfoExitoLayout.setVerticalGroup(
             dlgInfoExitoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dlgInfoExitoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel14)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(18, 18, 18)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnCloseInfoExito)
+                .addContainerGap(39, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calculadora Binomial");
         setLocation(new java.awt.Point(400, 100));
-        setMaximumSize(new java.awt.Dimension(1060, 800));
-        setMinimumSize(new java.awt.Dimension(1060, 800));
+        setMaximumSize(new java.awt.Dimension(1070, 770));
+        setMinimumSize(new java.awt.Dimension(1070, 770));
         setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
-        setPreferredSize(new java.awt.Dimension(1060, 800));
-        setSize(new java.awt.Dimension(1060, 800));
+        setPreferredSize(new java.awt.Dimension(1070, 760));
+        setSize(new java.awt.Dimension(1070, 760));
 
-        PanelCalculadora.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Calculadora", 0, 0, new java.awt.Font("Trebuchet MS", 0, 24))); // NOI18N
+        PanelCalculadora.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Calculadora", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 0, 24))); // NOI18N
         PanelCalculadora.setMaximumSize(new java.awt.Dimension(800, 700));
         PanelCalculadora.setMinimumSize(new java.awt.Dimension(600, 500));
         PanelCalculadora.setPreferredSize(new java.awt.Dimension(800, 700));
@@ -137,7 +198,7 @@ public class Binomial extends javax.swing.JFrame {
 
         txtCalcProbExito.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
 
-        txtCalcNumExitos.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtCalcMinNumExitos.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
 
         jButton1.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jButton1.setText("?");
@@ -150,16 +211,30 @@ public class Binomial extends javax.swing.JFrame {
             }
         });
 
+        comboSimboloMinNumExitos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<", "<=" }));
+
+        comboSimboloMaxNumExitos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<", "<=", "=" }));
+
+        txtCalcMaxNumExitos.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
+
+        txtCalcMinNumExitos1.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+
+        jButton2.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
+        jButton2.setText("Calcular");
+
+        jLabel16.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(0, 204, 102));
+        jLabel16.setText("Resultado");
+
         javax.swing.GroupLayout PanelCalculadoraLayout = new javax.swing.GroupLayout(PanelCalculadora);
         PanelCalculadora.setLayout(PanelCalculadoraLayout);
         PanelCalculadoraLayout.setHorizontalGroup(
             PanelCalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelCalculadoraLayout.createSequentialGroup()
-                .addGroup(PanelCalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelCalculadoraLayout.createSequentialGroup()
+            .addGroup(PanelCalculadoraLayout.createSequentialGroup()
+                .addGroup(PanelCalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PanelCalculadoraLayout.createSequentialGroup()
                         .addGap(37, 37, 37)
                         .addGroup(PanelCalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel12)
                             .addComponent(jLabel10)
                             .addComponent(jLabel9)
                             .addComponent(jLabel11))
@@ -167,13 +242,35 @@ public class Binomial extends javax.swing.JFrame {
                         .addGroup(PanelCalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txtCalcNumReps, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtCalcExito, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCalcProbExito, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCalcNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtCalcProbExito, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(PanelCalculadoraLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelCalculadoraLayout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnMostrarEjemplos)))
+                        .addComponent(btnMostrarEjemplos))
+                    .addGroup(PanelCalculadoraLayout.createSequentialGroup()
+                        .addGroup(PanelCalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(PanelCalculadoraLayout.createSequentialGroup()
+                                .addGap(221, 221, 221)
+                                .addComponent(jButton2))
+                            .addGroup(PanelCalculadoraLayout.createSequentialGroup()
+                                .addGap(89, 89, 89)
+                                .addComponent(txtCalcMinNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(13, 13, 13)
+                                .addComponent(comboSimboloMinNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel12)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(comboSimboloMaxNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txtCalcMaxNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(PanelCalculadoraLayout.createSequentialGroup()
+                                .addGap(231, 231, 231)
+                                .addComponent(jLabel16))
+                            .addGroup(PanelCalculadoraLayout.createSequentialGroup()
+                                .addGap(196, 196, 196)
+                                .addComponent(txtCalcMinNumExitos1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         PanelCalculadoraLayout.setVerticalGroup(
@@ -192,21 +289,33 @@ public class Binomial extends javax.swing.JFrame {
                 .addGroup(PanelCalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
                     .addComponent(txtCalcProbExito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(PanelCalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(31, 31, 31)
+                .addGroup(PanelCalculadoraLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
-                    .addComponent(txtCalcNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtCalcMinNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboSimboloMinNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboSimboloMaxNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCalcMaxNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(62, 62, 62)
+                .addComponent(jButton2)
+                .addGap(89, 89, 89)
+                .addComponent(jLabel16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtCalcMinNumExitos1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 170, Short.MAX_VALUE)
                 .addComponent(btnMostrarEjemplos)
                 .addContainerGap())
         );
 
-        PanelEjemplo1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ejemplos", 0, 0, new java.awt.Font("Trebuchet MS", 0, 24))); // NOI18N
+        PanelCapasEjemplos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        PanelCapasEjemplos.setLayout(new javax.swing.OverlayLayout(PanelCapasEjemplos));
+
+        PanelEjemplo1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ejemplos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 0, 24))); // NOI18N
         PanelEjemplo1.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
-        PanelEjemplo1.setMaximumSize(new java.awt.Dimension(475, 400));
+        PanelEjemplo1.setMaximumSize(new java.awt.Dimension(475, 700));
         PanelEjemplo1.setMinimumSize(new java.awt.Dimension(475, 400));
         PanelEjemplo1.setName(""); // NOI18N
-        PanelEjemplo1.setPreferredSize(new java.awt.Dimension(475, 400));
+        PanelEjemplo1.setPreferredSize(new java.awt.Dimension(475, 700));
 
         jLabel3.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 51, 255));
@@ -215,10 +324,6 @@ public class Binomial extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 102, 0));
         jLabel4.setText("Éxito:");
-
-        jLabel5.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(148, 0, 211));
-        jLabel5.setText("Número de Éxitos:");
 
         jLabel6.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel6.setText("Fracaso:");
@@ -242,10 +347,6 @@ public class Binomial extends javax.swing.JFrame {
         txtEjemplo1ProbExito.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         txtEjemplo1ProbExito.setText("4%");
 
-        txtEjemplo1NumExitos.setEditable(false);
-        txtEjemplo1NumExitos.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
-        txtEjemplo1NumExitos.setText("1");
-
         txtEjemplo1Fracaso.setEditable(false);
         txtEjemplo1Fracaso.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         txtEjemplo1Fracaso.setText("No tener defecto de fábrica.");
@@ -260,6 +361,41 @@ public class Binomial extends javax.swing.JFrame {
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jLabel1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
 
+        txtEjemplo1MinNumExitos.setEditable(false);
+        txtEjemplo1MinNumExitos.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtEjemplo1MinNumExitos.setText("N/A");
+        txtEjemplo1MinNumExitos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEjemplo1MinNumExitosActionPerformed(evt);
+            }
+        });
+
+        comboEjemplo1SimboloMinNumExitos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "N/A" }));
+
+        jLabel15.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(148, 0, 211));
+        jLabel15.setText("Número de Éxitos:");
+
+        comboEjemplo1SimboloMaxNumExitos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "=" }));
+
+        txtEjemplo1MaxNumExitos.setEditable(false);
+        txtEjemplo1MaxNumExitos.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtEjemplo1MaxNumExitos.setText("1");
+
+        btnEjemplo1Siguiente.setText("Siguiente Ejemplo >");
+        btnEjemplo1Siguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEjemplo1SiguienteActionPerformed(evt);
+            }
+        });
+
+        btnEjemplo1Anterior.setText("< Ejemplo Anterior");
+        btnEjemplo1Anterior.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEjemplo1AnteriorActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout PanelEjemplo1Layout = new javax.swing.GroupLayout(PanelEjemplo1);
         PanelEjemplo1.setLayout(PanelEjemplo1Layout);
         PanelEjemplo1Layout.setHorizontalGroup(
@@ -272,20 +408,43 @@ public class Binomial extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(PanelEjemplo1Layout.createSequentialGroup()
                         .addGroup(PanelEjemplo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel7))
-                        .addGap(18, 18, 18)
-                        .addGroup(PanelEjemplo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtEjemplo1Exito, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtEjemplo1ProbExito, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtEjemplo1NumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtEjemplo1Fracaso, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtEjemplo1NumFracasos, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtEjemplo1NumReps, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addGroup(PanelEjemplo1Layout.createSequentialGroup()
+                                .addGroup(PanelEjemplo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel7))
+                                .addGap(18, 18, 18)
+                                .addGroup(PanelEjemplo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtEjemplo1Fracaso, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtEjemplo1NumFracasos, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(PanelEjemplo1Layout.createSequentialGroup()
+                                .addGroup(PanelEjemplo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel8))
+                                .addGap(18, 18, 18)
+                                .addGroup(PanelEjemplo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtEjemplo1Exito, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtEjemplo1ProbExito, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtEjemplo1NumReps, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelEjemplo1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(txtEjemplo1MinNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(13, 13, 13)
+                        .addComponent(comboEjemplo1SimboloMinNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(comboEjemplo1SimboloMaxNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtEjemplo1MaxNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(49, 49, 49))))
+            .addGroup(PanelEjemplo1Layout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(btnEjemplo1Anterior)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnEjemplo1Siguiente)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         PanelEjemplo1Layout.setVerticalGroup(
             PanelEjemplo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -304,11 +463,14 @@ public class Binomial extends javax.swing.JFrame {
                 .addGroup(PanelEjemplo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(txtEjemplo1ProbExito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(23, 23, 23)
                 .addGroup(PanelEjemplo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(txtEjemplo1NumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jLabel15)
+                    .addComponent(txtEjemplo1MinNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboEjemplo1SimboloMinNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboEjemplo1SimboloMaxNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtEjemplo1MaxNumExitos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(PanelEjemplo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(txtEjemplo1Fracaso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -316,8 +478,338 @@ public class Binomial extends javax.swing.JFrame {
                 .addGroup(PanelEjemplo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(txtEjemplo1NumFracasos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(326, Short.MAX_VALUE))
+                .addGap(100, 100, 100)
+                .addGroup(PanelEjemplo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnEjemplo1Siguiente)
+                    .addComponent(btnEjemplo1Anterior))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        PanelCapasEjemplos.add(PanelEjemplo1);
+
+        PanelEjemplo2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ejemplos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 0, 24))); // NOI18N
+        PanelEjemplo2.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        PanelEjemplo2.setMaximumSize(new java.awt.Dimension(475, 700));
+        PanelEjemplo2.setMinimumSize(new java.awt.Dimension(475, 400));
+        PanelEjemplo2.setName(""); // NOI18N
+        PanelEjemplo2.setPreferredSize(new java.awt.Dimension(453, 700));
+
+        jLabel5.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 51, 255));
+        jLabel5.setText("Número de Repeticiones:");
+
+        jLabel17.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel17.setText("Éxito:");
+
+        jLabel18.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jLabel18.setText("Fracaso:");
+
+        jLabel20.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel20.setText("Probabilidad de Éxito:");
+
+        txtEjemplo1NumReps1.setEditable(false);
+        txtEjemplo1NumReps1.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtEjemplo1NumReps1.setText("20");
+
+        txtEjemplo1Exito1.setEditable(false);
+        txtEjemplo1Exito1.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtEjemplo1Exito1.setText("Tener defecto de fábrica.");
+
+        txtEjemplo1ProbExito1.setEditable(false);
+        txtEjemplo1ProbExito1.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtEjemplo1ProbExito1.setText("4%");
+
+        txtEjemplo1Fracaso1.setEditable(false);
+        txtEjemplo1Fracaso1.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtEjemplo1Fracaso1.setText("No tener defecto de fábrica.");
+
+        jLabel2.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel2.setText("<html>Ejemplo 2. La probabilidad de que las bolsas de aire de los<br>automóviles en una línea de producción <font color='orange'>tengan un defecto<br>de fábrica</font> es del <font color='red'>4%</font>. <br><br> a) Calcule la probabilidad de que <font color='purple'>menos de 3 <br> </font>de los próximos <font color='blue'>20 autos</font> producidos tenga<br>algún defecto de fábrica en sus bolsas de aire.</html>");
+        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel2.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+
+        txtEjemplo1MinNumExitos1.setEditable(false);
+        txtEjemplo1MinNumExitos1.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtEjemplo1MinNumExitos1.setText("0");
+        txtEjemplo1MinNumExitos1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEjemplo1MinNumExitos1ActionPerformed(evt);
+            }
+        });
+
+        comboEjemplo1SimboloMinNumExitos1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<=" }));
+
+        jLabel21.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(148, 0, 211));
+        jLabel21.setText("Número de Éxitos:");
+
+        comboEjemplo1SimboloMaxNumExitos1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<" }));
+
+        txtEjemplo1MaxNumExitos1.setEditable(false);
+        txtEjemplo1MaxNumExitos1.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtEjemplo1MaxNumExitos1.setText("3");
+
+        btnEjemplo2Siguiente.setText("Siguiente Ejemplo >");
+        btnEjemplo2Siguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEjemplo2SiguienteActionPerformed(evt);
+            }
+        });
+
+        btnEjemplo2Anterior.setText("< Ejemplo Anterior");
+        btnEjemplo2Anterior.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEjemplo2AnteriorActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PanelEjemplo2Layout = new javax.swing.GroupLayout(PanelEjemplo2);
+        PanelEjemplo2.setLayout(PanelEjemplo2Layout);
+        PanelEjemplo2Layout.setHorizontalGroup(
+            PanelEjemplo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelEjemplo2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(PanelEjemplo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PanelEjemplo2Layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(PanelEjemplo2Layout.createSequentialGroup()
+                        .addGroup(PanelEjemplo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(PanelEjemplo2Layout.createSequentialGroup()
+                                .addComponent(jLabel18)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtEjemplo1Fracaso1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(PanelEjemplo2Layout.createSequentialGroup()
+                                .addGroup(PanelEjemplo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel17)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel20))
+                                .addGap(18, 18, 18)
+                                .addGroup(PanelEjemplo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtEjemplo1Exito1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtEjemplo1ProbExito1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtEjemplo1NumReps1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelEjemplo2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(txtEjemplo1MinNumExitos1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(13, 13, 13)
+                        .addComponent(comboEjemplo1SimboloMinNumExitos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(comboEjemplo1SimboloMaxNumExitos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtEjemplo1MaxNumExitos1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(49, 49, 49))))
+            .addGroup(PanelEjemplo2Layout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(btnEjemplo2Anterior)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnEjemplo2Siguiente)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        PanelEjemplo2Layout.setVerticalGroup(
+            PanelEjemplo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelEjemplo2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(PanelEjemplo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(txtEjemplo1NumReps1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(PanelEjemplo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel17)
+                    .addComponent(txtEjemplo1Exito1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(PanelEjemplo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel20)
+                    .addComponent(txtEjemplo1ProbExito1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(PanelEjemplo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel21)
+                    .addComponent(txtEjemplo1MinNumExitos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboEjemplo1SimboloMinNumExitos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboEjemplo1SimboloMaxNumExitos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtEjemplo1MaxNumExitos1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PanelEjemplo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel18)
+                    .addComponent(txtEjemplo1Fracaso1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(130, 130, 130)
+                .addGroup(PanelEjemplo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnEjemplo2Siguiente)
+                    .addComponent(btnEjemplo2Anterior))
+                .addContainerGap(180, Short.MAX_VALUE))
+        );
+
+        PanelCapasEjemplos.add(PanelEjemplo2);
+
+        PanelEjemplo3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ejemplos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 0, 24))); // NOI18N
+        PanelEjemplo3.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        PanelEjemplo3.setMaximumSize(new java.awt.Dimension(475, 700));
+        PanelEjemplo3.setMinimumSize(new java.awt.Dimension(475, 400));
+        PanelEjemplo3.setName(""); // NOI18N
+        PanelEjemplo3.setPreferredSize(new java.awt.Dimension(475, 700));
+
+        jLabel19.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(0, 51, 255));
+        jLabel19.setText("Número de Repeticiones:");
+
+        jLabel22.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel22.setText("Éxito:");
+
+        jLabel23.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jLabel23.setText("Fracaso:");
+
+        jLabel25.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel25.setText("Probabilidad de Éxito:");
+
+        txtEjemplo1NumReps2.setEditable(false);
+        txtEjemplo1NumReps2.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtEjemplo1NumReps2.setText("20");
+
+        txtEjemplo1Exito2.setEditable(false);
+        txtEjemplo1Exito2.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtEjemplo1Exito2.setText("Tener defecto de fábrica.");
+
+        txtEjemplo1ProbExito2.setEditable(false);
+        txtEjemplo1ProbExito2.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtEjemplo1ProbExito2.setText("4%");
+
+        txtEjemplo1Fracaso2.setEditable(false);
+        txtEjemplo1Fracaso2.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtEjemplo1Fracaso2.setText("No tener defecto de fábrica.");
+
+        jLabel26.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel26.setText("<html>Ejemplo 3. La probabilidad de que las bolsas de aire de los<br>automóviles en una línea de producción <font color='orange'>tengan un defecto<br>de fábrica</font> es del <font color='red'>4%</font>. <br><br> a) Calcule la probabilidad de que<font color='purple'> al menos 2 <br></font>de los próximos <font color='blue'>20 autos</font> producidos tenga<br>algún defecto de fábrica en sus bolsas de aire.</html>");
+        jLabel26.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel26.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+
+        txtEjemplo1MinNumExitos2.setEditable(false);
+        txtEjemplo1MinNumExitos2.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtEjemplo1MinNumExitos2.setText("2");
+        txtEjemplo1MinNumExitos2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEjemplo1MinNumExitos2ActionPerformed(evt);
+            }
+        });
+
+        comboEjemplo1SimboloMinNumExitos2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<=" }));
+
+        jLabel27.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(148, 0, 211));
+        jLabel27.setText("Número de Éxitos:");
+
+        comboEjemplo1SimboloMaxNumExitos2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "<=" }));
+
+        txtEjemplo1MaxNumExitos2.setEditable(false);
+        txtEjemplo1MaxNumExitos2.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtEjemplo1MaxNumExitos2.setText("20");
+
+        btnEjemplo1Siguiente1.setText("Siguiente Ejemplo >");
+        btnEjemplo1Siguiente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEjemplo1Siguiente1ActionPerformed(evt);
+            }
+        });
+
+        btnEjemplo1Anterior1.setText("< Ejemplo Anterior");
+        btnEjemplo1Anterior1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEjemplo1Anterior1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PanelEjemplo3Layout = new javax.swing.GroupLayout(PanelEjemplo3);
+        PanelEjemplo3.setLayout(PanelEjemplo3Layout);
+        PanelEjemplo3Layout.setHorizontalGroup(
+            PanelEjemplo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelEjemplo3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(PanelEjemplo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PanelEjemplo3Layout.createSequentialGroup()
+                        .addComponent(jLabel26)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(PanelEjemplo3Layout.createSequentialGroup()
+                        .addGroup(PanelEjemplo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(PanelEjemplo3Layout.createSequentialGroup()
+                                .addComponent(jLabel23)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtEjemplo1Fracaso2, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(PanelEjemplo3Layout.createSequentialGroup()
+                                .addGroup(PanelEjemplo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel22)
+                                    .addComponent(jLabel19)
+                                    .addComponent(jLabel25))
+                                .addGap(18, 18, 18)
+                                .addGroup(PanelEjemplo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtEjemplo1Exito2, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtEjemplo1ProbExito2, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtEjemplo1NumReps2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(0, 22, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelEjemplo3Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(txtEjemplo1MinNumExitos2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(13, 13, 13)
+                        .addComponent(comboEjemplo1SimboloMinNumExitos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel27)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(comboEjemplo1SimboloMaxNumExitos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtEjemplo1MaxNumExitos2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(49, 49, 49))))
+            .addGroup(PanelEjemplo3Layout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(btnEjemplo1Anterior1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnEjemplo1Siguiente1)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        PanelEjemplo3Layout.setVerticalGroup(
+            PanelEjemplo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelEjemplo3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(PanelEjemplo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(txtEjemplo1NumReps2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(PanelEjemplo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel22)
+                    .addComponent(txtEjemplo1Exito2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(PanelEjemplo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel25)
+                    .addComponent(txtEjemplo1ProbExito2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(PanelEjemplo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel27)
+                    .addComponent(txtEjemplo1MinNumExitos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboEjemplo1SimboloMinNumExitos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboEjemplo1SimboloMaxNumExitos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtEjemplo1MaxNumExitos2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PanelEjemplo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel23)
+                    .addComponent(txtEjemplo1Fracaso2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(128, 128, 128)
+                .addGroup(PanelEjemplo3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnEjemplo1Siguiente1)
+                    .addComponent(btnEjemplo1Anterior1))
+                .addContainerGap(182, Short.MAX_VALUE))
+        );
+
+        PanelCapasEjemplos.add(PanelEjemplo3);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -327,33 +819,81 @@ public class Binomial extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(PanelCalculadora, javax.swing.GroupLayout.PREFERRED_SIZE, 548, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(PanelEjemplo1, javax.swing.GroupLayout.PREFERRED_SIZE, 463, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addComponent(PanelCapasEjemplos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(28, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(PanelCalculadora, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(PanelEjemplo1, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE))
-                .addContainerGap(87, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(PanelCapasEjemplos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PanelCalculadora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMostrarEjemplosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarEjemplosActionPerformed
-        if(PanelEjemplo1.isVisible()){
-            PanelEjemplo1.setVisible(false);
+        if(PanelCapasEjemplos.isVisible()){
+            PanelCapasEjemplos.setVisible(false);
         }else{
             PanelEjemplo1.setVisible(true);
+            PanelEjemplo2.setVisible(false);
+            PanelCapasEjemplos.setVisible(true);
         }
     }//GEN-LAST:event_btnMostrarEjemplosActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         dlgInfoExito.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtEjemplo1MinNumExitosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEjemplo1MinNumExitosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEjemplo1MinNumExitosActionPerformed
+
+    private void btnEjemplo1SiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjemplo1SiguienteActionPerformed
+        PanelEjemplo1.setVisible(false);
+        PanelEjemplo2.setVisible(true);
+    }//GEN-LAST:event_btnEjemplo1SiguienteActionPerformed
+
+    private void btnEjemplo1AnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjemplo1AnteriorActionPerformed
+        PanelEjemplo1.setVisible(false);
+        PanelEjemplo3.setVisible(true);
+    }//GEN-LAST:event_btnEjemplo1AnteriorActionPerformed
+
+    private void btnCloseInfoExitoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseInfoExitoActionPerformed
+        dlgInfoExito.setVisible(false);
+    }//GEN-LAST:event_btnCloseInfoExitoActionPerformed
+
+    private void txtEjemplo1MinNumExitos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEjemplo1MinNumExitos1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEjemplo1MinNumExitos1ActionPerformed
+
+    private void btnEjemplo2SiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjemplo2SiguienteActionPerformed
+        PanelEjemplo2.setVisible(false);
+        PanelEjemplo3.setVisible(true);
+    }//GEN-LAST:event_btnEjemplo2SiguienteActionPerformed
+
+    private void btnEjemplo2AnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjemplo2AnteriorActionPerformed
+        PanelEjemplo2.setVisible(false);
+        PanelEjemplo1.setVisible(true);
+    }//GEN-LAST:event_btnEjemplo2AnteriorActionPerformed
+
+    private void txtEjemplo1MinNumExitos2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEjemplo1MinNumExitos2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEjemplo1MinNumExitos2ActionPerformed
+
+    private void btnEjemplo1Siguiente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjemplo1Siguiente1ActionPerformed
+        PanelEjemplo3.setVisible(false);
+        PanelEjemplo1.setVisible(true);
+    }//GEN-LAST:event_btnEjemplo1Siguiente1ActionPerformed
+
+    private void btnEjemplo1Anterior1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjemplo1Anterior1ActionPerformed
+        PanelEjemplo3.setVisible(false);
+        PanelEjemplo2.setVisible(true);
+    }//GEN-LAST:event_btnEjemplo1Anterior1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -392,16 +932,48 @@ public class Binomial extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PanelCalculadora;
+    private javax.swing.JLayeredPane PanelCapasEjemplos;
     private javax.swing.JPanel PanelEjemplo1;
+    private javax.swing.JPanel PanelEjemplo2;
+    private javax.swing.JPanel PanelEjemplo3;
+    private javax.swing.JButton btnCloseInfoExito;
+    private javax.swing.JButton btnEjemplo1Anterior;
+    private javax.swing.JButton btnEjemplo1Anterior1;
+    private javax.swing.JButton btnEjemplo1Siguiente;
+    private javax.swing.JButton btnEjemplo1Siguiente1;
+    private javax.swing.JButton btnEjemplo2Anterior;
+    private javax.swing.JButton btnEjemplo2Siguiente;
     private javax.swing.JButton btnMostrarEjemplos;
+    private javax.swing.JComboBox<String> comboEjemplo1SimboloMaxNumExitos;
+    private javax.swing.JComboBox<String> comboEjemplo1SimboloMaxNumExitos1;
+    private javax.swing.JComboBox<String> comboEjemplo1SimboloMaxNumExitos2;
+    private javax.swing.JComboBox<String> comboEjemplo1SimboloMinNumExitos;
+    private javax.swing.JComboBox<String> comboEjemplo1SimboloMinNumExitos1;
+    private javax.swing.JComboBox<String> comboEjemplo1SimboloMinNumExitos2;
+    private javax.swing.JComboBox<String> comboSimboloMaxNumExitos;
+    private javax.swing.JComboBox<String> comboSimboloMinNumExitos;
     private javax.swing.JDialog dlgInfoExito;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -410,14 +982,29 @@ public class Binomial extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField txtCalcExito;
-    private javax.swing.JTextField txtCalcNumExitos;
+    private javax.swing.JTextField txtCalcMaxNumExitos;
+    private javax.swing.JTextField txtCalcMinNumExitos;
+    private javax.swing.JTextField txtCalcMinNumExitos1;
     private javax.swing.JTextField txtCalcNumReps;
     private javax.swing.JTextField txtCalcProbExito;
     private javax.swing.JTextField txtEjemplo1Exito;
+    private javax.swing.JTextField txtEjemplo1Exito1;
+    private javax.swing.JTextField txtEjemplo1Exito2;
     private javax.swing.JTextField txtEjemplo1Fracaso;
-    private javax.swing.JTextField txtEjemplo1NumExitos;
+    private javax.swing.JTextField txtEjemplo1Fracaso1;
+    private javax.swing.JTextField txtEjemplo1Fracaso2;
+    private javax.swing.JTextField txtEjemplo1MaxNumExitos;
+    private javax.swing.JTextField txtEjemplo1MaxNumExitos1;
+    private javax.swing.JTextField txtEjemplo1MaxNumExitos2;
+    private javax.swing.JTextField txtEjemplo1MinNumExitos;
+    private javax.swing.JTextField txtEjemplo1MinNumExitos1;
+    private javax.swing.JTextField txtEjemplo1MinNumExitos2;
     private javax.swing.JTextField txtEjemplo1NumFracasos;
     private javax.swing.JTextField txtEjemplo1NumReps;
+    private javax.swing.JTextField txtEjemplo1NumReps1;
+    private javax.swing.JTextField txtEjemplo1NumReps2;
     private javax.swing.JTextField txtEjemplo1ProbExito;
+    private javax.swing.JTextField txtEjemplo1ProbExito1;
+    private javax.swing.JTextField txtEjemplo1ProbExito2;
     // End of variables declaration//GEN-END:variables
 }
