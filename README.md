@@ -1,2 +1,0 @@
-# Probabilidades
-Calculadora de probabilidades.
