@@ -71,9 +71,6 @@
               <Dimension value="[295, 200]"/>
             </Property>
           </Properties>
-          <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="&lt;html&gt;Breve descripci&#xf3;n de los dos tipos&lt;br&gt; presentes en el ejercicio. &lt;br&gt;&lt;br&gt;Esto se utilizar&#xe1; solamente como &lt;br&gt;una referencia. Este campo es opcional.&lt;/html&gt;"/>
-          </AccessibilityProperties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel22">
           <Properties>

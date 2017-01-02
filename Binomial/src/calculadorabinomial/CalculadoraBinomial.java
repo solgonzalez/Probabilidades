@@ -1,9 +1,6 @@
 
-package proyectoprobabilidades;
-/**
- *
- * @author gmari
- */
+package calculadorabinomial;
+
 public class CalculadoraBinomial {
 
     /**
