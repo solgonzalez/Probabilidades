@@ -2,12 +2,15 @@
 package calculadorahipergeometrica;
 
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 public class Hipergeometrica extends javax.swing.JFrame {
 
     /**
      * Creates new form Hipergeometrica
      */
+    Controlador controlador = new Controlador();
+    
     public Hipergeometrica() {
         initComponents();
         this.setIconImage(new ImageIcon(getClass().getResource("/media/calculator.png")).getImage());
@@ -128,11 +131,10 @@ public class Hipergeometrica extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabel19.getAccessibleContext().setAccessibleName("<html>Breve descripción de los dos tipos<br> presentes en el ejercicio. <br><br>Esto se utilizará solamente como <br>una referencia. Este campo es opcional.</html>");
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(100, 10));
 
-        PanelCalculadora.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Calculadora", 0, 0, new java.awt.Font("Trebuchet MS", 0, 24))); // NOI18N
+        PanelCalculadora.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Calculadora", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 0, 24))); // NOI18N
         PanelCalculadora.setMaximumSize(new java.awt.Dimension(800, 700));
         PanelCalculadora.setMinimumSize(new java.awt.Dimension(600, 500));
         PanelCalculadora.setPreferredSize(new java.awt.Dimension(800, 700));
@@ -144,10 +146,17 @@ public class Hipergeometrica extends javax.swing.JFrame {
             }
         });
 
+        txtResultado.setEditable(false);
         txtResultado.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtResultado.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
         btnCalcular.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
         btnCalcular.setText("Calcular");
+        btnCalcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcularActionPerformed(evt);
+            }
+        });
 
         jLabel16.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(204, 0, 0));
@@ -184,6 +193,11 @@ public class Hipergeometrica extends javax.swing.JFrame {
         jLabel13.setText("Total");
 
         txtTotalPoblacion.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        txtTotalPoblacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTotalPoblacionActionPerformed(evt);
+            }
+        });
 
         jLabel14.setFont(new java.awt.Font("Arial", 0, 60)); // NOI18N
         jLabel14.setText("{");
@@ -384,7 +398,7 @@ public class Hipergeometrica extends javax.swing.JFrame {
         PanelCapasEjemplos.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         PanelCapasEjemplos.setLayout(new javax.swing.OverlayLayout(PanelCapasEjemplos));
 
-        PanelEjemplo2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ejemplos", 0, 0, new java.awt.Font("Trebuchet MS", 0, 24))); // NOI18N
+        PanelEjemplo2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ejemplos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 0, 24))); // NOI18N
         PanelEjemplo2.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         PanelEjemplo2.setMaximumSize(new java.awt.Dimension(475, 700));
         PanelEjemplo2.setMinimumSize(new java.awt.Dimension(475, 400));
@@ -657,6 +671,71 @@ public class Hipergeometrica extends javax.swing.JFrame {
     private void btnCloseInfoTiposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseInfoTiposActionPerformed
         dlgInfoTipos.setVisible(false);
     }//GEN-LAST:event_btnCloseInfoTiposActionPerformed
+
+    private void txtTotalPoblacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTotalPoblacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTotalPoblacionActionPerformed
+
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
+        if(!controlador.validarNumero(txtTotalPoblacion.getText())){
+            JOptionPane.showMessageDialog(this, "Población total inválida.");
+            txtTotalPoblacion.setText("");
+        }else if(!controlador.validarNumero(txtPoblacionTipo1.getText())){
+            JOptionPane.showMessageDialog(this, "Población de tipo 1 inválida.");
+            txtPoblacionTipo1.setText("");
+        }else if(!controlador.validarNumero(txtPoblacionTipo2.getText())){
+            JOptionPane.showMessageDialog(this, "Población de tipo 2 inválida.");
+            txtPoblacionTipo2.setText("");
+        }else if(!controlador.validarNumero(txtTotalMuestra.getText())){
+            JOptionPane.showMessageDialog(this, "Total de muestra inválido.");
+            txtTotalMuestra.setText("");
+        }else if(!controlador.validarNumero(txtMuestraTipo1.getText())){
+            JOptionPane.showMessageDialog(this, "Muestra de tipo 1 inválida.");
+            txtMuestraTipo1.setText("");
+        }else if(!controlador.validarNumero(txtMuestraTipo2.getText())){
+            JOptionPane.showMessageDialog(this, "Muestra de tipo 2 inválida.");
+            txtMuestraTipo2.setText("");
+        }else{
+            int poblacionTotal = Integer.parseInt(txtTotalPoblacion.getText());
+            int poblacionTipo1 = Integer.parseInt(txtPoblacionTipo1.getText());
+            int poblacionTipo2 = Integer.parseInt(txtPoblacionTipo2.getText());
+            int muestraTotal = Integer.parseInt(txtTotalMuestra.getText());
+            int muestraTipo1 = Integer.parseInt(txtMuestraTipo1.getText());
+            int muestraTipo2 = Integer.parseInt(txtMuestraTipo2.getText());
+            if(controlador.validarPoblacion(poblacionTotal, poblacionTipo1, poblacionTipo2)){
+                if(controlador.validarPoblacion(muestraTotal, muestraTipo1, muestraTipo2)){
+                    if(poblacionTotal >= muestraTotal){
+                        double resultado = controlador.calcularHipergeometrica(poblacionTotal, poblacionTipo1,
+                                muestraTotal, muestraTipo1);
+                        if(resultado != -1){
+                            txtResultado.setText(String.valueOf(resultado));
+                        }else{
+                            JOptionPane.showMessageDialog(this, "Número no computable.");
+                        }
+                    }else{
+                        JOptionPane.showMessageDialog(this, "Muestra debe ser menor"
+                                + " o igual a población total.");
+                        txtTotalMuestra.setText("");
+                        txtMuestraTipo1.setText("");
+                        txtMuestraTipo2.setText("");
+                    }
+                }else{
+                JOptionPane.showMessageDialog(this, "Suma de tipos de muestra"
+                        + " total no corresponde. Total = Tipo 1 + Tipo 2.");
+                txtTotalMuestra.setText("");
+                txtMuestraTipo1.setText("");
+                txtMuestraTipo2.setText("");
+                }
+            }else{
+                JOptionPane.showMessageDialog(this, "Suma de tipos de población"
+                        + " total no corresponde. Total = Tipo 1 + Tipo 2.");
+                txtTotalPoblacion.setText("");
+                txtPoblacionTipo1.setText("");
+                txtPoblacionTipo2.setText("");
+            }
+        }
+        
+    }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
      * @param args the command line arguments

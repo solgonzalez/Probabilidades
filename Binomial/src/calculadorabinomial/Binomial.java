@@ -183,11 +183,9 @@ public class Binomial extends javax.swing.JFrame {
         dlgInfoNumExitos.setIconImage(null);
         dlgInfoNumExitos.setIconImages(null);
         dlgInfoNumExitos.setLocation(new java.awt.Point(400, 200));
-        dlgInfoNumExitos.setMaximumSize(new java.awt.Dimension(475, 320));
         dlgInfoNumExitos.setMinimumSize(new java.awt.Dimension(475, 320));
         dlgInfoNumExitos.setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
         dlgInfoNumExitos.setModalityType(java.awt.Dialog.ModalityType.APPLICATION_MODAL);
-        dlgInfoNumExitos.setPreferredSize(new java.awt.Dimension(475, 320));
         dlgInfoNumExitos.setSize(new java.awt.Dimension(475, 320));
 
         jLabel24.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
