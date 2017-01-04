@@ -305,6 +305,7 @@ public class Binomial extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1070, 710));
         setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
         setPreferredSize(new java.awt.Dimension(1070, 710));
+        setResizable(false);
         setSize(new java.awt.Dimension(1070, 710));
 
         PanelCalculadora.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Calculadora", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 0, 24))); // NOI18N
@@ -1138,7 +1139,7 @@ public class Binomial extends javax.swing.JFrame {
                     double resultado = controlador.calcularBinomialCompleja(minNumExitos, maxNumExitos,
                             minSimbolo, maxSimbolo, numReps, probExito);
                     if (resultado != -1){
-                        txtResultado.setText(String.valueOf(resultado));
+                        txtResultado.setText(String.valueOf(Controlador.redondear(resultado, 5)));
                     }else{
                         JOptionPane.showMessageDialog(this, "Valores no computables.");
                     }
@@ -1153,7 +1154,7 @@ public class Binomial extends javax.swing.JFrame {
                     double resultado = controlador.calcularBinomialSimple(numExitos, 
                             numReps, probExito);
                     if (resultado != -1){
-                        txtResultado.setText(String.valueOf(resultado));
+                        txtResultado.setText(String.valueOf(Controlador.redondear(resultado, 5)));
                     }else{
                         JOptionPane.showMessageDialog(this, "Valores no computables.");
                     }

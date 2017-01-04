@@ -1,6 +1,9 @@
 
 package calculadorabinomial;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class Controlador {
     
     Calculadora calculadora = new Calculadora();
@@ -77,5 +80,14 @@ public class Controlador {
             resultado = -1;
         }
         return resultado;
+    }
+    
+    public static double redondear(double pValor, int pDecimales){
+        if (pDecimales < 0) {
+            throw new IllegalArgumentException();
+        }
+        BigDecimal bd = new BigDecimal(pValor);
+        bd = bd.setScale(pDecimales, RoundingMode.HALF_UP);
+        return bd.doubleValue();
     }
 }

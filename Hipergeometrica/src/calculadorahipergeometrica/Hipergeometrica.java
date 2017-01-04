@@ -133,6 +133,7 @@ public class Hipergeometrica extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(100, 10));
+        setResizable(false);
 
         PanelCalculadora.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Calculadora", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Trebuchet MS", 0, 24))); // NOI18N
         PanelCalculadora.setMaximumSize(new java.awt.Dimension(800, 700));
@@ -708,7 +709,7 @@ public class Hipergeometrica extends javax.swing.JFrame {
                         double resultado = controlador.calcularHipergeometrica(poblacionTotal, poblacionTipo1,
                                 muestraTotal, muestraTipo1);
                         if(resultado != -1){
-                            txtResultado.setText(String.valueOf(resultado));
+                            txtResultado.setText(String.valueOf(Controlador.redondear(resultado, 5)));
                         }else{
                             JOptionPane.showMessageDialog(this, "Número no computable.");
                         }
